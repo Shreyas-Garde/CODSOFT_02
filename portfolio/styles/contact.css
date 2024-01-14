@@ -1,0 +1,55 @@
+
+    .contact {
+      background-color: #333;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+  }
+  
+  .contact h2 {
+    font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 30px;
+  }
+  
+  .contact p {
+      margin-bottom: 20px;
+  }
+  
+  form {
+      max-width: 400px;
+      margin: 0 auto;
+  }
+  
+  label {
+      display: block;
+      /* font-weight: bold; */
+      margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color:black;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      /* font-weight: bold; */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: gray; /* Custom hover color */
+  }

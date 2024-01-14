@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <header>
+      <nav role="navigation" aria-label="Navigation">
+        <div class="container navbar">
+        
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h2 id="typed-text"></h2>
+          </div>
+          <div class="heading">
+            <h1>I'm Shreyas Garde</h1>
+            <h3>
+              Hey there! I'm a computer engineering student with a coding and programming passion that's set to soar! 🚀 Ready to dive into my story? 🌟 Let's start scrolling and uncover more about me.
+            </h3>
+          </div>
+          <div
+            class="hero-socials"
+            aria-label="Social Media Links"
+          >
+            <a href="#" aria-label="Twitter Link"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#" aria-label="Github Link"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="#" aria-label="LinkedIn Link"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="#" aria-label="Facebook Link"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          
+           <h1> About Me</h1>
+          
+          <div class="about-info">
+            <p>
+              Hey, I'm Shreyas, currently immersed in my third year of Computer Engineering studies. Specializing in Full Stack Web Development, I've cultivated a strong foundation in both front-end and back-end technologies. My journey involves translating theoretical knowledge into hands-on experiences, contributing to real-world projects. Passionate about creating seamless web solutions, I thrive on challenges and stay up-to-date with the latest tech trends. If you're keen on technology, innovation, and collaboration, let's connect and create something extraordinary!
+            </p>
+            
+          </div>
+
+          <button
+            onclick="downloadPDF()"
+            class="about-button"
+            aria-label="Download Resume Button"
+          >
+            Download Resume
+            <ion-icon
+              name="download-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+          <script>
+            function downloadPDF() {
+              var pdfPath = './styles/Resume.pdf';
+              var link = document.createElement('a');
+              link.href = pdfPath;
+              link.download = 'downloaded_file.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }
+          </script>
+        </div>
+      </section>
+
+
+      <section class="skills" id="skills">
+        <h1>Just a few of my skills</h1>
+        <div class="container skill-grid">
+          <div class="skill">
+            <ion-icon
+            name="logo-html5"
+            class="skill-icon"
+            aria-hidden="true"
+            ></ion-icon>
+            <h3>HTML5</h3>
+            <p>
+              Demonstrating a meticulous approach to semantic markup, I specialize in leveraging the capabilities of HTML5 to craft accessible and well-structured web content. My expertise guarantees cross-browser compatibility and compliance with the most recent standards, establishing a robust groundwork for delivering outstanding user experiences.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+            name="logo-CSS3"
+            class="skill-icon"
+            aria-hidden="true"
+            ></ion-icon>
+            <h3>CSS3</h3>
+            <p>
+            Breathing life into creative concepts, my proficiency in CSS3 empowers me to design visually captivating and responsive layouts. Proficient in flexbox, grid layouts, and CSS preprocessors, I guarantee meticulous styling that achieves pixel-perfection and effortlessly adapts to diverse devices and screen dimensions.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+            name="logo-javascript"
+            class="skill-icon"
+            aria-hidden="true"
+            ></ion-icon>
+            <h3>Javascript</h3>
+            <p>
+              As a proficient JavaScript developer, I specialize in crafting interactive and feature-rich applications. My skill set encompasses asynchronous programming, ES6/ES7 features, and the utilization of frameworks/libraries to elevate functionality. Committed to optimizing performance, I strive to deliver seamless user interactions through inventive JavaScript solutions.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+              name="logo-react"
+              class="skill-icon"
+              aria-hidden="true"
+            ></ion-icon>
+            <h3>React</h3>
+            <p>
+            As a seasoned React developer, I specialize in crafting modular and efficient components for a dynamic user interface. My skills include proficient state management, managing component lifecycles, and seamlessly integrating third-party libraries, ensuring the scalability and maintainability of applications.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="resume" id="resume">
+        <div class="container">
+          <h1>
+           Education & Work 
+          </h1>
+
+          <div class="resume-content">
+            <div>
+              <h2>Education</h2>
+
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>Fattechand Jain College</p>
+                    <p>Chinchwad, Pune</p>
+                  </div>
+                  <span>2019-2021</span>
+                </div>
+                <p class="card-info">
+                  I completed my 11th and 12th grades at Fattechand Jain College, achieving not only a robust academic foundation but also refining crucial skills in critical thinking and problem-solving. The vibrant learning atmosphere provided me with a comprehensive grasp of diverse subjects, nurturing both personal and intellectual development. This educational odyssey has instilled in me a dedication to excellence and a fervor for perpetual learning.
+                </p>
+              </article>
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>Dr. D Y Patil Institute Of Technology</p>
+                    <p>SPPU University, Pune</p>
+                  </div>
+                  <span>2021-2025</span>
+                </div>
+                <p class="card-info">
+                  I am currently undertaking a Computer Engineering degree at Dr. D Y Patil Institute Of Technology. Immersed in a demanding curriculum, I am broadening my understanding of core computer science principles and gaining practical exposure to cutting-edge technologies. This academic pursuit not only ignites my enthusiasm for innovation but also cultivates my aptitude for problem-solving, paving the way for a dynamic career in the ever-evolving realm of computer engineering.
+                </p>
+              </article>
+            </div>
+            <div>
+              <h2>Experience</h2>
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>Prodigy Internship</p>
+                    <p>Pune</p>
+                  </div>
+                  <span>1/9/2023 - 30/9/2023</span>
+                </div>
+                <p class="card-info">
+                  I concluded a fulfilling internship at Prodigy, where I immersed myself in the field of Full Stack Web Development. Throughout this enriching experience, I refined my proficiency in both front-end and back-end technologies, actively engaging in real-world projects and contributing to the creation of robust web solutions. This internship not only equipped me with hands-on experience but also enhanced my comprehension of the complexities inherent in developing dynamic and efficient web applications.
+                </p>
+              </article>
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>CodSoft Internship</p>
+                    <p>Pune</p>
+                  </div>
+                  <span>15/12/2023 - 15/1/2024</span>
+                </div>
+                <p class="card-info">
+                  I'am pursuing an internship at Codsoft, where I delved into the realm of Full Stack Web Development. During this immersive experience, I honed my skills in both front-end and back-end technologies, working on real-world projects and contributing to the development of robust web solutions. This internship not only provided hands-on experience but also deepened my understanding of the intricacies involved in creating dynamic and efficient web applications.
+                </p>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h1>Some of my Works</h1>
+          <div class="project-grid">
+            <div class="project-card" data-category="react">
+              <h2>Travel Website</h2>
+              <img
+                src="./styles/travel.png"
+                alt="Front-end"
+              />
+            </div>
+            <div
+              class="project-card"
+              data-category="html"
+            >
+              <h2>Weather App</h2>
+              <img
+                src="./styles/task_5.png"
+                alt="front-end"
+              />
+            </div>
+            <div
+              class="project-card"
+              data-category="css"
+            >
+              <h2>StopWatch Web App</h2>
+              <img
+                src="./styles/task_2.png"
+                alt="Front-end and Back-end Project "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>You can Contact Me</h2>
+      
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+      <div class="container footer-container">
+        <p>Shreyas Garde &copy; 2024 .All rights reserved</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
